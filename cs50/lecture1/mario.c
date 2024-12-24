@@ -3,7 +3,14 @@
 
 int main(void)
 {
-     int n = get_int("Size: ");
+// Get size of grid
+     int n;
+     do
+     {
+        n = get_int("Size: ");
+     } 
+     while (n < 1);
+//  Prints grids of bricks 
      for(int i = 0; i < n; i++)
      {
         for(int j = 0; j < n; j++)
@@ -12,5 +19,4 @@ int main(void)
         }
         printf("\n");
      }
-     
 }
