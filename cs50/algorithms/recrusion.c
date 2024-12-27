@@ -2,19 +2,16 @@
 #include <stdio.h>
 #include <string.h>
 
-
 void draw(int n);
 
 int main(void)
 {
     int height = get_int("Height: ");
     draw(height);
-
 }
 
 void draw(int n)
 {
-
     if (n <= 0)
     {
         return;
@@ -26,7 +23,4 @@ void draw(int n)
         printf("#");
     }
     printf("\n");
-    
-
-
 }
